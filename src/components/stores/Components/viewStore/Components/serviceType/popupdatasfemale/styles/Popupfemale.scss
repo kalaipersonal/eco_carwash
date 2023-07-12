@@ -1,0 +1,174 @@
+@use "../../../../../../../../scss/abstract/" as *;
+
+.main-female-datas {
+    .modal {
+        width: 80%;
+    }
+    .modal-titles {
+        text-align: center;
+        font-size: 1.7em;
+        width: 100%;
+        font-weight: 600;
+    }
+    .active {
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        @include themed() {
+            color: t($input-focused);
+            background: t($secondary);
+        }
+    }
+    .btnsed {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $secondary--dark;
+        color: white;
+        outline: none;
+        border: none;
+
+        .far {
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size:20px !important;
+        }
+    }
+    .modal-content {
+        width: 200%;
+    }
+    .modal-titles {
+        text-align: center;
+        font-size: 1.4em;
+        width: 100%;
+        font-weight: 500;
+    }
+    .hair-buttons {
+        display: flex;
+      
+
+        // .left-hair_buttons {
+        //     width: 50%;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     .btn-female {
+        //         border: none;
+        //         outline: none;
+        //         width: 7vw;
+        //         background-color: $secondary--dark;
+        //         color: white;
+        //         border-radius: 10px;
+        //         font-size: 1.2em;
+        //         padding: 5px;
+        //     }
+        // }
+        // .right-hair_buttons {
+        //     width: 50%;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     .btn-female {
+        //         border: none;
+        //         outline: none;
+        //         width: 7vw;
+        //         background-color: $secondary--dark;
+        //         color: white;
+        //         border-radius: 10px;
+        //         font-size: 1.2em;
+        //         padding: 5px;
+        //     }
+        // }
+    }
+    .input-female-datas {
+        display: flex;
+        height: 63vh;
+        // border-bottom: 2px solid lightgray;
+        border-top: 1px solid lightgray;
+
+        .standard-left {
+            width: 50%;
+            // border-right: 2px solid lightgray;
+            margin-left: 20px;
+
+            .text-standard {
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 700;
+                padding: 10px 0;
+            }
+            .input-types {
+                margin-top: 40px;
+                margin-left: 30px;
+            }
+        }
+        .standard-right {
+            width: 50%;
+            .text-standard {
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 700;
+                padding: 10px 0;
+            }
+            .input-types {
+                margin-top: 40px;
+                margin-left: 50px;
+            }
+            .modal-footer {
+                .btn-female {
+                    padding: 20px;
+                    border: 2px solid red;
+                }
+            }
+        }
+    }
+    .hairs {
+        width: 100%;
+        display: flex;
+        
+        .button-first {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+            }
+            .lis {
+                text-align: center;
+                border-radius: 10px;
+                outline: none;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                width: 5vw;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .button-second {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                list-style: none;
+            }
+            .lis {
+                width: 5vw;
+                height: 40px;
+                border-radius: 10px;
+                outline: none;
+                text-align: center;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

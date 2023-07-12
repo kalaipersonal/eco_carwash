@@ -1,0 +1,10 @@
+@use 'scss' as *;
+
+.eco-app{
+  width: 100%;
+
+  @include themed(){
+    background: t($background);
+    color: t($text);
+  }
+}

@@ -1,0 +1,11 @@
+.list-customers {
+
+    height: 100%;
+    width: 100%;
+
+    .list-customers-body {
+
+        height: calc(100% - 50px);
+        width: 100%;
+    }
+}

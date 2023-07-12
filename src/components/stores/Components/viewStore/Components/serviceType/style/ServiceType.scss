@@ -1,0 +1,164 @@
+@use "../../../../../../../scss/abstract" as *;
+
+.services-type {
+    height: 100%;
+    width: 100%;
+
+    .service-type-head,
+    .card-body {
+        height: 49%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: black;
+
+        @include themed() {
+            background: t($background-alt);
+            color: t($text-black);
+            box-shadow: t($shadow-sm);
+        }
+
+        .car-type-title {
+            font-weight: normal;
+            height: 30%;
+
+            h5 {
+                @include themed() {
+                    border-bottom: 1px solid t($nav-text);
+                }
+            }
+        }
+
+        .car-types {
+            font-weight: normal;
+            height: 70%;
+            overflow-y: scroll;
+
+            .btn-navy-circle {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .service-type-body,
+    .card-body {
+        height: 49%;
+        width: 100%;
+        overflow: scroll;
+        border-radius: 10px;
+        background-color: green;
+
+        @include themed() {
+            background: t($background-alt);
+            color: t($text-black);
+            box-shadow: t($shadow-sm);
+        }
+        .mains-popup-split {
+            width: 100%;
+
+            // padding: 10px;
+            .left-popup {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                .male {
+                    font-size: 1.4em;
+                    font-weight: 700;
+                   
+                }
+                .left-split-popup {
+                    .btns {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: $secondary--dark;
+                        color: white;
+                        outline: none;
+                        border: none;
+                    }
+                    .far {
+                        font-size: 1.5em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .right-popup {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                .male {
+                    font-size: 1.4em;
+                    font-weight: 700;
+                }
+                .right-split-popup
+                {
+                    .btns {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: $secondary--dark;
+                        color: white;
+                        outline: none;
+                        border: none;
+                    }
+                    .far {
+                        font-size: 1.5em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .car-service-title {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 5px;
+
+        @include themed() {
+            background-color: t($frosted);
+        }
+        .tab {
+            padding: 10px 15px;
+            width: 6rem;
+            cursor: pointer;
+        }
+        .active {
+            @include themed() {
+                background: t($secondary);
+                color: t($input-focused);
+            }
+        }
+    }
+
+    .car-service-body {
+        height: 90%;
+        overflow: scroll;
+
+        .interior,
+        .exterior {
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+            align-items: center;
+            padding: 0 5rem;
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                height: 90vh;
+            }
+        }
+    }
+}

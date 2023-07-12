@@ -1,0 +1,8 @@
+@use "../../../../../scss/" as *;
+.card {
+    border: none !important;
+    .horizontal {
+        width: 94%;
+        height: 160px;
+    }
+}

@@ -1,0 +1,66 @@
+//Light colors
+$primary--light: #6DDFD8;
+$secondary--light: #04294B;
+
+$primary-lightened: rgba(109,223,216,0.2);
+
+$background--light: #F8F7F7;
+$background-alt--light: #FCFCFC;
+
+$text-black--light: black;
+$text-white--light: white;
+$text-grey--light: #979797;
+
+$input-focused--light: #F0F0F0;
+
+$inverter--light: 0;
+
+$text--light: #000;
+$text-hover-light:#FBFBFB;
+$nav-text--light: #B4B4B4;
+
+$shadow-lg--light: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+$shadow-md--light: 4px 4px 14px rgba(0, 0, 0, 0.19);
+$shadow-sm--light: 0px 4px 5px rgba(0, 0, 0, 0.07);
+
+$button-config-light: #F8F8F8;
+$frosted-light: #E4F6F4;
+
+
+
+//Dark colors
+$primary--dark: #6DDFD8;
+$secondary--dark: #04294B;
+
+$background--dark: rgba(25, 24, 25, 1);
+$background-alt--dark: rgba(55, 54, 55, 1);
+
+$text-black--dark: white;
+$text-white--dark: black;
+$text-grey--dark: #979797;
+
+$input-focused--dark: #FDFDFD;
+
+$inverter--dark: 1;
+
+$text--dark: #FBFBFB;
+$text-hover-dark:#FBFBFB;
+$nav-text--dark: #B4B4B4;
+
+$shadow-lg--dark: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-md--dark: 4px 4px 14px rgba(0, 0, 0, 0.19);
+$shadow-sm--dark: 0px 4px 5px rgba(0, 0, 0, 0.07);
+
+
+$button-config-dark: hsl(0 0% 10%);
+$frosted-dark: #E4F6F4;
+
+
+
+
+// dashboard colors
+
+$back_bg_dash:#E7F8F7;
+$back_exterior:#C4C4C4;
+$standard_interior:#57B2B9;
+$back_export_color:#E9A059;;

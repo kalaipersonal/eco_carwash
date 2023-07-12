@@ -1,0 +1,100 @@
+@use "../abstract/" as *;
+
+.p-datatable.p-datatable-scrollable {
+    .p-datatable-scrollable-header {
+        background: transparent !important;
+    }
+
+    .p-datatable-scrollable-body {
+        scroll-behavior: smooth;
+        // scrollbar-color: var(--theme_color_2) transparent;
+        scrollbar-width: thin;
+
+        @include themed() {
+            scrollbar-color: t($primary) transparent;
+        }
+
+        &::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent !important;
+            height: 7px;
+            width: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 7px;
+            width: 7px;
+            border-radius: 30px;
+
+            @include themed() {
+                background: t($primary) !important;
+            }
+        }
+    }
+
+    table {
+        // border-collapse: separate !important;
+        // border-spacing: 0 10px !important;
+
+        thead.p-datatable-thead {
+            width: 100% !important;
+
+            > tr {
+                > th {
+                    background: transparent !important;
+                    font-size: 0.8rem;
+                    text-align: center !important;
+
+                    @include themed() {
+                        color: t($text-black) !important;
+                    }
+                }
+            }
+            .p-column-title {
+                background: transparent !important;
+                font-size: 0.8rem;
+                text-align: center !important;
+                margin: 0 auto;
+
+                @include themed() {
+                    color: t($text-black) !important;
+                }
+            }
+        }
+        tbody,
+        .p-datatable-tbody {
+            padding: 0 10px;
+
+            > tr {
+                border-radius: 16px !important;
+                min-height: 100px;
+                margin: 15px 0 !important;
+                // box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
+
+                @include themed() {
+                    background: t($background-alt) !important;
+                    box-shadow: t($shadow-sm) !important;
+                    color: t($text-black) !important;
+                }
+
+                > td {
+                    border: none !important;
+                    padding: 20px;
+                    // overflow: hidden;
+                    // white-space: nowrap;
+                    // text-overflow: ellipsis;
+                    position: relative;
+                }
+                > td::after {
+                    content: "";
+
+                    // @include themed() {
+                    //     margin-right: 5px solid t($text-grey);
+                    // }
+                }
+            }
+        }
+    }
+}
